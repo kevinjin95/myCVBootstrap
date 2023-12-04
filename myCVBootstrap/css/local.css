@@ -1,0 +1,27 @@
+body {
+    margin-top: 40px;
+  }
+  
+#height {
+  height: 180px;
+}
+
+.img{
+  height: 200px;
+}
+
+.img{
+  height: 90px;
+}
+
+.imgPygame{
+  height: 30px;
+}
+
+.imgCinema{
+  height: 60px;
+}
+
+.row{
+  justify-content: center;
+}
