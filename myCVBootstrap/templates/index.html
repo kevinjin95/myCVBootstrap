@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IUT de Villetaneuse</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta charset="UTF-8" />
+    <link href = "{{ url_for('static', filename='css/bootstrap.min.css') }}" rel = "stylesheet">
+    <link href ="{{ url_for('static', filename='css/local.css') }}" rel = "stylesheet">
+    <script href = "{{ url_for('static', filename='js/local.css') }}"></script>
+    <script href = "{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+ </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="height">
+        <div class="card col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 m-1">
+          <div class="d-grid">
+            <button type="button" class="btn btn-primary fade show mt-2" data-bs-toggle="collapse" data-bs-target="#pres"
+            aria-expanded="false" aria-controls="card">Présentation</button>
+          </div>
+          <div class="mt-3 collapse" id="pres">
+            <img src="{{ url_for('static', filename='assets/pi.png') }}" class="imgPerso" alt="photo d'identité" />
+            <h3>JIN Kevin</h3>
+            <h4>28 ans</h4>
+            <div class="row mt-3">
+              <div class="col-6 d-grid"><img src="{{ url_for('static', filename='assets/e-mail.png') }}" class="img mx-3" alt="e-mail" /></div>
+              <div class="col-6" ><img src="{{ url_for('static', filename='assets/tel.png') }}" class="img" alt="tel" /></div>
+            </div>
+            <div class="row">
+              <p class="col-6">kevin.jin@edu.univ-paris13.fr <br> kevin.jin@lilo.org</p>
+              <p class="col-6 px-3">06 95 40 38 19</p>
+            </div>
+            <div class="row mt-3">
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/adresse.png') }}" class="img mx-3" alt="adresse" /></div>
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/langue.png') }}" class="img" alt="langue" /></div>
+            </div>
+            <div class="row">
+              <p class="col-6">95360 Montmagny</p>
+              <ul class="col-6">
+                <li>Anglais(B2)</li>
+                <li>chinois(basique)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 m-1">
+          <div class=" d-grid">
+            <button type="button" class="btn btn-danger mt-2" class="btn btn-secondary mt-2" data-bs-toggle="collapse" data-bs-target="#comp"
+            aria-expanded="false" aria-controls="card">compétences</button>
+          </div>
+          <div class="mt-3 collapse" id="comp">
+            <div class="row">
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/golang.png') }}" class="img mx-4" alt="golang" /></div>
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/fyne.png') }}" class="img mx-2" alt="fyne" /></div>
+            </div>
+            Golang + package Fyne
+            <div class="row mt-3">
+              <div class="col-5"><img src="{{ url_for('static', filename='assets/python.png') }}" class="img" alt="python" /></div>
+              <div class="col-7"><img src="{{ url_for('static', filename='assets/pygame.png') }}" class="imgPygame my-4" alt="pygame" /></div>
+            </div>
+            Python + package  Pygame et Tkinter
+            <div class="row mt-3">
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/html-css-javascript.png') }}" class="img" alt="javascipt" /></div>
+              <div class="col-6"><img src="{{ url_for('static', filename='assets/react.png') }}" class="img" alt="react" /></div>
+            </div>
+            HTML/CSS, Javascript + package GSAP, D3JS et React
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="card col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 m-1">
+          <div class="d-grid">
+            <button type="button" class="btn btn-secondary mt-2" data-bs-toggle="collapse" data-bs-target="#ecole"
+            aria-expanded="false" aria-controls="card">Parcours scolaire</button>
+          </div>
+          <div class="mt-3 collapse" id="ecole">
+            <h5>BUT3 Infomatique</h5>
+            <p>2024-en cours</p>
+            <p>Formation pluridisciplinaire: Cours de gestion de projet, anglais, communication</p>
+            <p>Qualité algorithmique, NoSQL, IA, développement avancée, DevOps, qualité de 
+              développement</p>
+            <h5>BUT Passerelle Technologies de l'information</h5>
+            <p>2023-2024</p>
+            <p> Math ( statistiques, probabilités, analyse, algèbre ), réseaux, Linux, UML, 
+              management des systèmes, communication professionnelle, </p>
+            <p>Programmation en Python, Java, HTML/CSS, JS, complément web ( PHP ), 
+              complément mobile ( Android ), test unitaire, virtualisation( Docker )</p>
+            <h5>PREMIÈRE ANNÉE EN INFORMATIQUE</h5>
+            <p>2022-2023</p>
+            <p>– Acquisition des bases dans de nombreux langages de code ( Python, Golang, 
+              HTML/CSS/JavaScript, Java ), cours de réseaux, de Linux, infra et Unreal Engine</p>
+            <h5>BTS CONCEPTION ET REALISATION DE SYSTEMES AUTOMATIQUES (anciennement appelé MAI)</h5>
+            <p>2015-2017</p>
+            <p>Tâche en ma charge du projet de 2e année : CAO, réalisation des
+            sécurités mécanique du bâti, calcul mécanique, conception des 
+            schémas électrique et câblage de l’armoire</p>
+            <h5>BAC PRO ÉLECTROTECHNIQUE, ÉNERGIE, ÉQUIPEMENTS COMMUNICANTS</h5>
+            <p>2013-2015</p>
+            <p>Méthode pour la mise en service, dépannage et réglage de système</p>
+          </div>
+        </div>
+        <div class="card col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 m-1">
+          <div class=" d-grid">
+            <button type="button" class="btn btn-success mt-2" class="btn btn-warning mt-2" data-bs-toggle="collapse" data-bs-target="#pro"
+            aria-expanded="false" aria-controls="pro">Parcours professionnel</button>
+          </div>
+          <div class="mt-3 collapse" id="pro">
+            <h5>STAGIAIRE TESTEUR - SOCIÉTÉ EKINOPS – MASSY( 92 )</h5>
+            <p>Du 06/2024 au 08/2024</p>
+            <p>Lancement de test sous serveur Jenkins, développement de l'environnement de test 
+            en bash pour relancer un build une 2e fois par soir automatiquement en prenant en compte 
+            les tests échoués lors du 1er job de la soirée afin de les relancer</p>
+            <h5>AUTOMATICIEN – SOCIÉTÉ MTAIR - Domont( 95 )</h5>
+            <p>Du 04/2018 au 07/2022</p>
+            <p> Réalisation de l’analyse fonctionnelle, la programmation (EC-gfxProgram), de la 
+            mise en service, et des tests/rapports ( Excel, Word )</p>
+            <p>Mise en service de poste client Windows pour la GTB ( Niagara )</p>
+            <p> Développement de mon esprit d'équipe, de ma détermination, de mon sens du détail</p>
+          </div>
+        </div>
+        <div class="card col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 m-1">
+          <div class="d-grid">
+            <button type="button" class="btn btn-warning mt-2" data-bs-toggle="collapse" data-bs-target="#hobbie"
+            aria-expanded="false" aria-controls="hobbie">centres d'intérêts</button>
+          </div>
+          <div class="mt-3 collapse" id="hobbie">
+            <div class="row">
+              <div class="col-12"><img src="{{ url_for('static', filename='assets/cinema.png') }}" class="imgCinema mx-1" alt="cinema" /></div>
+            </div>
+            <div class="row">
+              <div class="col-12"><img src="{{ url_for('static', filename='assets/clavier.png') }}" class="img mx-2" alt="clavier" /></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src = "{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
